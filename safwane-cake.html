@@ -21,7 +21,7 @@
     }
 
     .name {
-      font-size: 3.5rem;
+      font-size: 2rem;
       font-weight: 900;
       color: #09fda8;
       text-shadow: 0 0 10px #328E6E, 0 0 20px #328E6E, 0 0 30px #328E6E;
@@ -155,6 +155,16 @@
       animation: fadeIn 1s 8.5s forwards;
     }
 
+    /* Add this media query for mobile devices */
+    @media screen and (max-width: 768px) {
+      .text h1 {
+        font-size: 1.5em; /* Smaller font size for mobile */
+      }
+      
+      .name {
+        font-size: 1.5rem; /* Also adjust the name size for better mobile experience */
+      }
+    }
     .text .name {
       opacity: 0;
       animation: fadeIn 1s 9s forwards;
@@ -348,6 +358,13 @@
 
 <body>
   <div class="confetti-container">
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
     <div class="confetti"></div>
     <div class="confetti"></div>
     <div class="confetti"></div>
